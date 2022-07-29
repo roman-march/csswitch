@@ -1,7 +1,8 @@
 import React from "react";
-import { nextFrame } from "./utils";
+import { nextFrame } from "../utils";
+import { CSSwitchProp } from "../types";
 
-const useWaitRender = () => {
+const useWaitRender: any = () => {
   const refCallback = React.useRef<any>(null);
   const [state, setState] = React.useState<any>(null);
 
@@ -21,7 +22,7 @@ const useWaitRender = () => {
   return registryCallback;
 };
 
-const CSSwitch: React.FC<any> = ({
+const CSSwitch: React.FC<CSSwitchProp> = ({
   as: Component,
   children: dirtyChildren,
   switchKey,
