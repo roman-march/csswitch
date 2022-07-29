@@ -91,3 +91,8 @@ const App = ({ state }) => {
 }
 ```
 </details>
+
+## Examples
+
+[Custom Cursor](https://codesandbox.io/s/csswitch-cursor-ji38dk)
+

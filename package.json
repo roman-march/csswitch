@@ -1,6 +1,6 @@
 {
   "name": "csswitch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CSSwitch - Small CSS library for switch-transitions",
   "scripts": {
     "build": "rimraf dist && tsc && rollup -c",
