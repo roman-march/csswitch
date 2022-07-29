@@ -1,0 +1,50 @@
+{
+  "name": "csswitch",
+  "version": "1.0.0",
+  "description": "CSSwitch - Small CSS library for switch-transitions",
+  "scripts": {
+    "build": "rimraf dist && tsc && rollup -c",
+    "dev": "rimraf dist && tsc && rollup -c -w"
+  },
+  "keywords": [
+    "csswitch",
+    "react",
+    "switch",
+    "animation",
+    "transition"
+  ],
+  "author": "Roman Marchenko",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": ["dist"],
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/roman-march/csswitch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roman-march/csswitch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roman-march/csswitch/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/react": "^18.0.14",
+    "@types/react-transition-group": "^4.4.5",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.7",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  }
+}
